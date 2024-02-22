@@ -5,13 +5,13 @@ module.exports.sendEmail = async (options) => {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "yassooff2004@gmail.com",
-        pass: "aaxs olqg bqpr npsu",
+        user: "process.env.sender_email",
+        pass: "process.env.pass",
       },
     });
 
     await transporter.sendMail({
-      from: '"Test" <yassooff2004@gmail.com>',
+      from: '"Test" <process.env.receiver_email>',
       to: options.email,
       subject: "Hello ✔",
       text: "",
