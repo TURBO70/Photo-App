@@ -6,7 +6,7 @@
 Technologies and tools used in the project:
    * Node.js
    * express
-   * MongoDB
+   * MongoDB 
    * mongoose
    * bcryptjs
    * dotenv
